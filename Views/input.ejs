@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        a {
+            color: #00BCD4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        textarea {
+            width: 80%;
+            margin-top: 20px;
+            background-color: #444;
+            border: 1px solid #555;
+            color: #ddd;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #00BCD4;
+            border: none;
+            padding: 10px 20px;
+            color: #2c2c2c;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0097A7;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img.logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<img src="../Public/rustplus.jpg" alt="Your Logo" class="logo">
+<p>
+    Goto <a href="https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf" target="_blank">this link</a> and install the chrome / edge addon to link your steam profile to Rust+. Upon logging into steam, and linking, you will come to a page showing a large amount of text. Copy this to clipboard, and paste it into this box, then convert it. Copy the converted text and paste it into discord with your active RustPlusPlus bot. You will need permission, or admin in the discord to do so.
+</p>
+<form action="/convert" method="post">
+    <textarea name="data" rows="10" cols="50"></textarea><br>
+    <input type="submit" value="Convert">
+</form>
+</body>
+</html>
